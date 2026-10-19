@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090812">
+<title>Play a game — PixelPlay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="player-page">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">P<span>✦</span></span><span>PIXEL<span class="brand-accent">PLAY</span></span></a><nav class="main-nav"><a class="nav-link" href="index.html#discover">Discover</a><a class="nav-link" href="index.html#trending">All games</a></nav><a class="btn btn-ghost compact-btn" href="index.html">← Back to arcade</a></header>
+<main class="wrap player-layout">
+  <div class="breadcrumb"><a href="index.html">PixelPlay</a><span> / </span><span id="crumbTitle">Game</span></div>
+  <section class="player-shell">
+    <div class="player-topline"><div class="player-game-identity"><div id="playerIcon" class="player-icon">✦</div><div><div class="section-kicker">NOW PLAYING</div><h1 id="gameTitle">Loading game…</h1></div></div><div class="player-controls"><button class="tool-button" id="restartButton" title="Restart game">↻ <span>Restart</span></button><button class="tool-button tool-primary" id="fullscreenButton" title="Fullscreen game">⛶ <span>Fullscreen</span></button></div></div>
+    <div id="gameStage" class="game-stage" tabindex="0"><div class="loading-message">Loading your game<span class="loading-dots">...</span></div></div>
+    <div class="player-bottomline"><span><span class="live-dot"></span> DEMO BUILD</span><span id="controlHint">Use the on-screen instructions to play.</span><button class="text-button" id="favoriteButton">☆ Save favorite</button></div>
+  </section>
+  <section class="game-info-grid"><article class="info-panel"><div class="section-kicker">ABOUT THIS GAME</div><h2 id="aboutTitle">Game details</h2><p id="gameDescription"></p><div id="gameTags" class="tag-list"></div></article><article class="info-panel related-panel"><div class="section-kicker">KEEP PLAYING</div><h2>More to explore</h2><div id="relatedGames" class="related-list"></div></article></section>
+</main>
+<footer class="site-footer"><div class="footer-inner wrap"><a class="brand" href="index.html"><span class="brand-mark">P<span>✦</span></span><span>PIXEL<span class="brand-accent">PLAY</span></span></a><p>Independent browser arcade · Built for fun</p><span>© <span id="year"></span> PixelPlay</span></div></footer>
+<script src="js/catalog.js"></script><script src="js/player.js"></script>
+</body></html>
